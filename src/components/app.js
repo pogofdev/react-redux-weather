@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import RichTextEditor from 'react-rte';
 import SearchBar from '../containers/search_bar';
+import WeatherList from '../containers/weather_list';
 
 export default class App extends Component {
 
@@ -29,6 +30,7 @@ export default class App extends Component {
         return (
             <div>
                 <SearchBar />
+                <WeatherList/>
                 <RichTextEditor
                     value={this.state.value}
                     onChange={this.onChange}
